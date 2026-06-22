@@ -25,7 +25,21 @@ A modern, responsive landing page for Raksha Gas Agency - providing fast and rel
 ## 🎨 Sections
 
 1. **Navigation Bar** - Sticky navigation with smooth scrolling
-2. **Hero Section** - Eye-catching banner with gradient background and CTA buttons
+2. **Hero Section** - <section class="hero">
+  <div class="hero-content">
+    <h1>Fast LPG Delivery in Bangalore</h1>
+    <p>Book your gas cylinder in under 30 seconds.</p>
+
+    <a href="https://wa.me/918296649191?text=Hi%20Raksha%20Gas,%20I%20want%20to%20book%20a%20cylinder"
+       class="btn-primary">
+       Book on WhatsApp
+    </a>
+
+    <a href="tel:+918296649191" class="btn-secondary">
+       Call Now
+    </a>
+  </div>
+</section>
 3. **Services** - Overview of 4 main services offered
 4. **Price List** - Transparent pricing for all services with icons
 5. **Why Choose Us** - Key features and benefits with emojis
@@ -39,7 +53,26 @@ A modern, responsive landing page for Raksha Gas Agency - providing fast and rel
 | LPG Refill | ₹2,149 |
 | New Connection Deposit | ₹1,950 |
 | Registration | ₹350 |
-| Delivery Charge | ₹99 |
+| Delivery Charge | ₹99 |<section class="products">
+
+<h2>Our Products</h2>
+
+<div class="product-card">
+<h3>Jyoti Gas 12 KG</h3>
+<a href="https://wa.me/918296649191">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<h3>Commercial Cylinder</h3>
+<a href="https://wa.me/918296649191">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<h3>Gas Stove & Spare Parts</h3>
+<a href="https://wa.me/918296649191">Order on WhatsApp</a>
+</div>
+
+</section>
 
 ## 🚀 Quick Start
 
@@ -73,8 +106,41 @@ python -m http.server 8000
 You can easily customize:
 
 ### Colors
-Edit CSS variables in `styles.css`:
-```css
+body{
+background:#0f172a;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.btn-primary{
+background:#ff6b00;
+padding:12px 25px;
+border-radius:12px;
+color:white;
+text-decoration:none;
+}
+
+.btn-secondary{
+border:1px solid white;
+padding:12px 25px;
+border-radius:12px;
+color:white;
+text-decoration:none;
+margin-left:10px;
+}
+
+.product-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+margin:15px;
+}
 :root {
     --primary-color: #ef4444;      /* Red */
     --secondary-color: #1f2937;    /* Dark Gray */
